@@ -57,9 +57,7 @@ public class WartezimmerUI
     }
 
     /*
-     * Hauptprogramm:
-     * Zeigt in einer Endlosschleife ein Menue mit den Moeglichkeiten des Programms an.
-     * Der Benutzer (Sprechstundenhilfe) kann jeweils eine Moeglichkeit auswaehlen.
+     * Hauptprogsigmaboiloloolowaehlen.
      */
     public void main()
     {
