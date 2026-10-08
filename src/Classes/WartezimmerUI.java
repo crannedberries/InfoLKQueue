@@ -57,7 +57,9 @@ public class WartezimmerUI
     }
 
     /*
-     * Hauptprogsigmaboiloloolowaehlen.
+     * Hauptprogramm:
+     * Zeigt in einer Endlosschleife ein Menue mit den Moeglichkeiten des Programms an.
+     * Der Benutzer (Sprechstundenhilfe) kann jeweils eine Moeglichkeit auswaehlen.
      */
     public void main()
     {
@@ -72,6 +74,6 @@ public class WartezimmerUI
             wahl = Console.readInt();
             if (wahl == 1) {aufnehmen(); }
             else if (wahl == 2) {aufrufen(); }
-        } while (wahl != 3);
-    } 
+        }
+    }
 }
