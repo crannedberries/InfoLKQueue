@@ -64,7 +64,7 @@ public class WartezimmerUI
     public void main()
     {
         int wahl; 
-        do
+        while (true)
         {
             Console.println("Menue");
             Console.println("1: Neuen Patient");

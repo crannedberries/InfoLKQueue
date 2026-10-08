@@ -25,6 +25,8 @@ public class Wartezimmer
     public Patient naechsterPatient()
     {
         // Diese Methode implementieren.
+        return null;
+        // Diese Methode implementieren.
     }
 
     /*
@@ -40,7 +42,7 @@ public class Wartezimmer
      */
     public int anzahl()
     {
-        // Diese Methode implementieren.
+        return 0;
     }
     
     /*
@@ -51,5 +53,6 @@ public class Wartezimmer
     public boolean loeschen(String pName)
     {
         // Diese Methode implementieren.
+        return false;
     }
 }
