@@ -63,6 +63,6 @@ public class WartezimmerUI
      */
     public void main()
     {
-        // Diese Methode implementieren.
+        System.out.println("hello");
     }
 }
