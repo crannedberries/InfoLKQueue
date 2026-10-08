@@ -72,6 +72,6 @@ public class WartezimmerUI
             wahl = Console.readInt();
             if (wahl == 1) {aufnehmen(); }
             else if (wahl == 2) {aufrufen(); }
-        }
-    }
+        } while (wahl != 3);
+    } 
 }
