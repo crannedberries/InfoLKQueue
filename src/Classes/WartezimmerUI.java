@@ -63,6 +63,17 @@ public class WartezimmerUI
      */
     public void main()
     {
-        System.out.println("hello");
+        int wahl; 
+        do
+        {
+            Console.println("Menue");
+            Console.println("1: Neuen Patient");
+            Console.println("2: Patient aufrufen");
+            Console.println("3: Beenden");
+            
+            wahl = Console.readInt();
+            if (wahl == 1) {aufnehmen(); }
+            else if (wahl == 2) {aufrufen(); }
+        }
     }
 }
