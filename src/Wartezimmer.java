@@ -16,7 +16,7 @@ public class Wartezimmer
      */
     public void einfuegen(Patient pPat)
     {
-        // Diese Methode implementieren.
+        queue.enqueue(pPat);
     }
 
     /*
@@ -24,11 +24,16 @@ public class Wartezimmer
      */
     public Patient naechsterPatient()
     {
-        // Diese Methode implementieren.
-        return null;
-        // Diese Methode implementieren.
+        if (queue.isEmpty() != true)
+        {
+            queue.dequeue();
+        }else if (queue.isEmpty() == true) 
+                {
+                    return null;
+                }
     }
 
+    
     /*
      * Alle Patienten werden aus der Warteschlange entfernt.
      */
