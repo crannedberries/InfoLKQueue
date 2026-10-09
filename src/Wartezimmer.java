@@ -34,7 +34,10 @@ public class Wartezimmer
      */
     public void alleLoeschen()
     {
-        queue.dequeue();
+        while (queue.isEmpty() != true)
+        {
+            queue.dequeue();
+        }
     }
     
     /*
