@@ -28,9 +28,9 @@ public class Wartezimmer
         {
             queue.dequeue();
         }else if (queue.isEmpty() == true) 
-                {
-                    return null;
-                }
+            {
+                return null;
+            }
     }
 
     

@@ -20,11 +20,15 @@ public class WartezimmerUI
      */
     public void aufnehmen()
     {
-        // Diese Methode implementieren.
+        Patient patient;
+        Console.println("name und kasse eingeben");
+        patient = new Patient(Console.readString(), Console.readString());
+        wz.einfuegen(patient);
     }
 
     /*
-     * Der naechste Patient kann vom Arzt behandelt werden.
+     * Der naechste Patient kann vom Arzt behandelt werden.1
+    
      * Gibt den Namen des Patient am Anfang der Warteschlange aus entfernt ihn.
      */
     public void aufrufen()
@@ -74,12 +78,8 @@ public class WartezimmerUI
             
             wahl = Console.readInt();
             if (wahl == 1) {aufnehmen(); }
-            else if (wahl == 2) {aufrufen(); }
-<<<<<<< HEAD
-        }   
-=======
+            else if (wahl == 2) {aufrufen(); }  
             else if (wahl == 3) {beenden(); }
         }
->>>>>>> 68fc4d5e4b40f1e325370ef7179e18cd29f3cec3
     }
 }
