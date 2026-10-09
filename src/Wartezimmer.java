@@ -24,13 +24,17 @@ public class Wartezimmer
      */
     public Patient naechsterPatient()
     {
+        Patient patient;
         if (queue.isEmpty() != true)
         {
+           patient = queue.front();
             queue.dequeue();
-        }else if (queue.isEmpty() == true) 
-            {
-                return null;
-            }
+            return patient;
+        }
+        else 
+        {
+            return null;
+        }
     }
 
     
