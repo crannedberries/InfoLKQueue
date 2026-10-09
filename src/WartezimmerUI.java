@@ -53,7 +53,8 @@ public class WartezimmerUI
      */
     public void beenden()
     {
-        // Diese Methode implementieren.
+        wz.alleLoeschen();
+        Console.println("geht alle weg");
     }
 
     /*
@@ -63,8 +64,8 @@ public class WartezimmerUI
      */
     public void main()
     {
-        int wahl; 
-        while (true)
+        int wahl = 0; 
+        while (wahl != 3)
         {
             Console.println("Menue");
             Console.println("1: Neuen Patient");
@@ -74,6 +75,11 @@ public class WartezimmerUI
             wahl = Console.readInt();
             if (wahl == 1) {aufnehmen(); }
             else if (wahl == 2) {aufrufen(); }
+<<<<<<< HEAD
         }   
+=======
+            else if (wahl == 3) {beenden(); }
+        }
+>>>>>>> 68fc4d5e4b40f1e325370ef7179e18cd29f3cec3
     }
 }

@@ -39,7 +39,10 @@ public class Wartezimmer
      */
     public void alleLoeschen()
     {
-        // Diese Methode implementieren.
+        while (queue.isEmpty() != true)
+        {
+            queue.dequeue();
+        }
     }
     
     /*
