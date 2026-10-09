@@ -34,7 +34,7 @@ public class Wartezimmer
      */
     public void alleLoeschen()
     {
-        // Diese Methode implementieren.
+        queue.dequeue();
     }
     
     /*
