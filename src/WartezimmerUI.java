@@ -33,9 +33,8 @@ public class WartezimmerUI
      */
     public void aufrufen()
     {
-        Patient patient;
         Console.println("Patient aufrufen");
-        if (patient == null)
+        if (wz.naechsterPatient() == null)
         {
             Console.println("Keine Person in Wartschlange");
         }else

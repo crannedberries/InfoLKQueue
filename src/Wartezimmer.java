@@ -14,9 +14,9 @@ public class Wartezimmer
     /*
      * Patient in die Warteschlange eingefuegt.
      */
-    public void einfuegen(Patient pPat)
+    public void einfuegen(Patient pPatient)
     {
-        queue.enqueue(pPat);
+        queue.enqueue(pPatient);
     }
 
     /*
@@ -25,15 +25,14 @@ public class Wartezimmer
     public Patient naechsterPatient()
     {
         Patient patient;
-        if (queue.isEmpty() != true)
-        {
-           patient = queue.front();
-            queue.dequeue();
-            return patient;
-        }
-        else 
+        if (queue.isEmpty())
         {
             return null;
+        }else 
+        {
+            patient = queue.front();
+            queue.dequeue();
+            return patient;
         }
     }
 
